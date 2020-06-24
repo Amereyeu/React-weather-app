@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montseratt", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  padding: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app {
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/16/20/36/balloon-5307204_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.4 ease;
+}
+
+.app.cold {
+  background-image: url("https://cdn.pixabay.com/photo/2015/02/15/14/32/winter-637165_1280.jpg");
+}
+
+.app.hot {
+  background-image: url("https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669_1280.jpg");
+}
+
+.search {
+  margin: 5em;
+}
+
+.search__bar {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-size: 1.25em;
+  transition: 0.4s ease;
+}
+
+.info__city {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.info__date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather {
+  display: flex;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2em;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.weather__temp {
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+
+.weather__desc {
+  color: #000;
+}
+
+dt {
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+dd {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+.nodata {
+  text-transform: uppercase;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2em;
+  width: 70%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(59, 59, 61);
+  font-size: 1.25em;
+}
